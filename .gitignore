@@ -12,3 +12,4 @@
 *.swo
 node_modules
 dist
+karma-xunit.xml

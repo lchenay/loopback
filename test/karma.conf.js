@@ -25,6 +25,10 @@ module.exports = function(config) {
     exclude: [
     ],
 
+    // test results reporter to use
+    // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
+    reporters: ['dots'],
+
     // web server port
     port: 9876,
 

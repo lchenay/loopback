@@ -58,7 +58,10 @@ module.exports = function(grunt) {
         configFile: 'test/karma.conf.js',
         browsers: [ 'PhantomJS' ],
         singleRun: true,
-        reporters: ['progress', 'junit'],
+        reporters: ['dots', 'junit'],
+
+        // increase the timeout for slow build slaves (e.g. Travis-ci)
+        browserNoActivityTimeout: 30000,
 
         // CI friendly test output
         junitReporter: {
